@@ -1,0 +1,20 @@
+rwrkSite:/importingSchema/[
+
+	//importingSchema.version == alphaBefore 1.0.0
+
+	%ROOTDIR% => siteVariant(html) => siteVariant(css) {
+//	%ROOTDIR% => siteVariant(php) => siteVariant(css) {			//importingSchema.version == 2.0
+		> IMPORT %IMPORTER%('%ROOTDIR%/engine/importer.css'); 
+		> load %modulesfromfile(%IMPORTER%)%;
+	}
+
+	this(siteVariant()) => load(importer()) {
+		> GET ELEMENT (BY NAME) [
+			- ("fontkit");
+			- ("fix.css");
+			- ("animations.css");
+		]
+		> IMPORT *
+		> IMPORT %ROOTDIR% => userstyle.css
+	}
+]

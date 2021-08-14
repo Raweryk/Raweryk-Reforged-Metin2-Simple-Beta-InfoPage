@@ -1,0 +1,82 @@
+﻿@import url("../importer.css");
+
+body {
+	background: black url("../../content/background-index.png");
+	color: var(--body-font);
+	font-family: lato;
+	text-shadow: 0 0 3px black;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+nav {
+	background: var(--nav_background);
+	backdrop-filter: var(--blur);
+	padding: var(--nav_padding);
+	margin-bottom: 5.5em;
+}
+
+nav > a { padding: 0 10px; }
+
+.nav_active {
+	border-bottom-color: #046092;
+	display: block;
+	position: absolute;
+	pointer-events: none;
+	border: 6px solid transparent;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+hr { width:  25%; border: 1px solid var(--nav_background); backdrop-filter: blur(1px); }
+
+content { }
+
+button {
+	padding: 10px 50px;
+	background: var(--buttonBackground);
+	backdrop-filter: var(--blur);
+	color: white;
+	border: 2px solid var(--buttonBorder);
+	font-family: lato;
+}
+
+button:hover {
+	background: var(--buttonBackground_hover);
+	border: 2px solid var(--buttonBorder_hover);
+	backdrop-filter: var(--blur);
+}
+
+button:focus {
+	border: 2px solid orange;
+	box-shadow: 0px 0px 10px black;
+}
+
+a { color: white; text-decoration: none }
+b { color: var(--body-highlight); }
+
+ul { margin: 0; padding: 3px 0; }
+li { display: inline; padding: 0 7px; }
+
+#rwrk_copyright_heart {
+	color: #ff254e;
+	font-weight: bold;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	font-size: 12px;
+	background: var(--nav_background);
+	backdrop-filter: var(--blur);
+	padding: var(--nav_padding);
+	margin: 0;
+}

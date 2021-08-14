@@ -1,0 +1,9 @@
+ErrorDocument 400     /engine/error/400.shtml
+ErrorDocument 401     /engine/error/401.shtml
+ErrorDocument 403     /engine/error/403.shtml
+ErrorDocument 404     /engine/error/404.shtml
+ErrorDocument 500     /engine/error/500.shtml
+ErrorDocument 502     /engine/error/502.shtml
+ErrorDocument 503     /engine/error/503.shtml
+ErrorDocument 504     /engine/error/504.shtml
+ErrorDocument 505     /engine/error/505.shtml

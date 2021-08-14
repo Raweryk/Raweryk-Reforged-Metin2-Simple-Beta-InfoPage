@@ -1,0 +1,78 @@
+:root {
+	--gif-bg: #e1e1e1;
+	--white: #fefefe;
+	--black: #000202;
+	--green: #5b8e36;
+	--red: #a73b3d;
+	--blue: #0042fb;
+}
+
+/*
+text shadow: 	lewo dół prawo góra
+zielony: #5b8e36;
+czerwony: #a73b3d;
+niebieski: #0042fb;
+
+biały: #fefefe;
+czarny: #000202;
+
+tło GIF: #e1e1e1;
+*/
+
+body {
+	background: url("background.gif");
+	background-attachment: fixed;
+	background-color: var(--gif-bg);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+}
+
+h1, h2, h3, button, footer {
+	font-family: tahoma;
+	font-weight: normal;
+}
+
+h1 {
+	color: var(--green);
+	font-size: 6em;
+	text-shadow: -3px 0 var(--red), 0 3px var(--black), 3px 0 var(--blue), 0 -3px var(--black);
+}
+
+h2 {
+	color: var(--red);
+	font-size: 3em;
+	text-shadow: -2px 0 var(--blue), 0 2px var(--black), 2px 0 var(--green), 0 -2px var(--black);
+}
+
+h3 {
+	color: var(--blue);
+	font-size: 2em;
+	text-shadow: -1px 0 var(--red), 0 1px var(--black), 1px 0 var(--green), 0 -1px var(--black);
+}
+
+button {
+	color: var(--white);
+	font-size: 1em;
+	text-shadow: -1px 0 var(--green), 0 1px var(--red), 1px 0 var(--blue), 0 -1px var(--black);
+	background: var(--black);
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	padding: 10px 30px;
+}
+
+footer {
+	color: var(--black);
+	font-size: 0.75em;
+	text-shadow: -1px 0 var(--blue), 0 1px var(--red), 1px 0 var(--green), 0 -1px var(--black);
+	position: fixed;
+	width: 100%;
+	bottom: 1%;
+	margin: 0;
+}
