@@ -4,27 +4,27 @@ projectMetadata {{
 		"undertype":"singleLang",
 		"displayName":"",
 		"currentRevision":"_verAlpha003",
-		"additionalInfo":""
+		"additionalInfo":"";
 	]
 	rwrkSingleLangMetin2IntroductionSite [
 		"type":"website",
 		"undertype":"singleLang",
 		"displayName":"",
 		"currentRevision":"_verNULL",
-		"additionalInfo":""
+		"additionalInfo":"";
 	]
 	rwrkSingleLangMetin2ProgressSite [
 		"type":"website",
 		"undertype":"singleLang",
 		"displayName":"",
 		"currentRevision":"_verBeta1",
-		"additionalInfo":"Almost ready to release!"
+		"additionalInfo":"Almost ready to release!";
 	]
 	rwrkSingleLangMetin2BetaSite_variantFluent [
 		"type":"website",
 		"undertype":"singleLang",
 		"displayName":"",
 		"currentRevision":"_verAlpha003",
-		"additionalInfo":""
+		"additionalInfo":"";
 	]
 }}
