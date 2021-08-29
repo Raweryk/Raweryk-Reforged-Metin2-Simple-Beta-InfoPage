@@ -1,0 +1,29 @@
+Informacja dotycz¹ca warunków u¿ycia:
+* Strona, któr¹ pobra³eœ zosta³a napisana od zera przez 'Raweryk' i zosta³a udostêpniona do pobrania za darmo.
+* Copyright strony zostal ustawiony na 'CC BY'.
+
+O stronie:
+* Strona zosta³a napisana z du¿ym naciskiem na jakoœæ i przejrzystoœæ kodu.
+* Strona posiada dwie wersje podstrony g³ównej (index), zawieraj¹c¹ zegar oraz tê bez zegara - "zegar" to skrypt odmierzaj¹cy czas do startu Twojego serwera!
+* Pobrana strona znajduje siê w mo¿liwie jak najbardziej neutralnym stanie - strona musi zostaæ przez Ciebie odpowiednio skonfigurowana. Czas konfiguracji: ~5 minut.
+* Strona zawiera skonfigurowane error documenty w .htaccess - znajduja sie one w /error/
+
+Konfiguracja strony:
+1) WejdŸ do katalogu '_index' i wybierz wersjê, która bardziej Ci odpowiada, przenieœ do katalogu 'WWW' i zmieñ nazwê na 'index.php'
+2) WejdŸ do wybranej przez siebie wersji pliku 'index' i zamieñ odpowiednie frazy jêzykowe.
+3) Skonfiguruj widgety FanPage oraz Serwera Discord i podmieñ (kod widgetu FanPage w miejsce 'iframe facebook', a kod widgetu Discorda w miejsce 'iframe discord').
+4) Je¿eli wybra³eœ wersjê z zegarem, ustaw datê.
+5) Wykonaj podpunkt 2) dla podstron 'rejestracja.php' oraz 'pobierz.php'.
+6) Wykonaj podpunk 3) dla podstrony 'pobierz.php'.
+7) W podstronie 'pobierz.php' wklej odpowiednie linki w miejsce "http://google.pl".
+8) Dokonaj edycji kolorów w arkuszach stylu (CSS), znajduj¹ siê one w katalogu 'attachments' - w 'navigation.css' ustaw kolor t³a górnego paska (oraz stopki copyright), a w 'main.css' kolor pogrubionego tekstu (b) oraz t³o zaznaczonego tekstu.
+9) WejdŸ do pliku 'config.php' (katalog 'attachments') i edytuj jego zawartoœæ zgodnie z informacjami.
+10) Dokonaj ewentualnej zmiany zawartosci stron-bledów w /error/
+11) Wrzuæ stronê na serwer (WWW).
+12) Zmien nazwe pliku 'htaccess' na '.htaccess'.
+GOTOWE!
+
+~~
+
+Mam nadziejê, ¿e moja strona bêdzie Ci wiernie s³u¿yæ.
+Pozdrawiam, Raweryk!

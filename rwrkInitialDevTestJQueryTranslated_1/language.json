@@ -1,0 +1,22 @@
+let langdata = {
+	"languages": {
+		"en": {
+			"strings": {
+				"serverHello": "Witaj na serwerze",
+				"serverName": "serwerMT2"
+			}
+		},
+		"fr": {
+			"strings": {
+				"btn-yes": "oui",
+				"btn-no": "non"
+			}
+		},
+		"de": {
+			"strings": {
+				"btn-yes": "ja",
+				"btn-no": "nein"
+			}
+		}
+	}
+}

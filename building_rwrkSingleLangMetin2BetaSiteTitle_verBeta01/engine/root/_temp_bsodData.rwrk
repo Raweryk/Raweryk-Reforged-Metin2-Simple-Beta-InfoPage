@@ -1,0 +1,6 @@
+rwrkSite:/importingSchema/[
+	> js &| json =: blue;
+	> init =: sandstone; //Raweri
+	> document.html(404) =: typical;
+	> document.html(!404) =: red;
+]
