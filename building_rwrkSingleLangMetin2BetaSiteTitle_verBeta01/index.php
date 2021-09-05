@@ -2,6 +2,8 @@
 <html lang='pl'>
 	<head>
 		<?php require('content/language.php'); ?>
+		<?php require('engine/config.rwrk'); ?>
+		<meta http-equiv='refresh' content='<?php echo "$websiteTimeout"; ?>'/>
 		<meta charset='pl-PL.UTF-8'/>
 		<meta name='viewport' content='width=device-width, initial-scale=0.9'/>
 		<meta name='title' content='Metin2'/>
@@ -19,6 +21,11 @@
 		<title><?php echo "$serverHello"; ?> <?php echo "$serverName"; ?></title>
 	</head>
 	<body>
+	<?php
+		if ($online != 1) {
+			header("Location: engine/root/offline.php");
+		}
+	?>
 <!--		<nav>
 			<ul>
 				<li>

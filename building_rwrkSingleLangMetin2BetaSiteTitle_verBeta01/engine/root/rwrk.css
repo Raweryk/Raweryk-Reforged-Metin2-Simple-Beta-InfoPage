@@ -1,13 +1,13 @@
 :root { 
-	--rwrkMainTheme: #1b1b1b;
-	--whiteColor: #bf9365;
+	--rwrkBackground: #1b1b1b;
+	--rwrkColor: #bf9365;
 }
 
 body {
 	margin: 17% 0 0 0;
 	padding: 0;
 	height: 100%;
-	background: var(--rwrkMainTheme);
+	background: var(--rwrkBackground);
 	text-align: center;
 	font-family: Tahoma;
 	font-size: 20px;
@@ -19,20 +19,20 @@ body {
 }
 
 a {
-	color: var(--whiteColor);
+	color: var(--rwrkColor);
 	text-decoration: none;
 }
 
 #rwrkError_Title {
 	margin-top: 10%;
 	padding: 3px 27px;
-	color: var(--rwrkMainTheme);
-	background: var(--whiteColor);
+	color: var(--rwrkBackground);
+	background: var(--rwrkColor);
 	font-weight: bold;
 }
 
 #rwrkError_Desc, #rwrkError_Link {
-	color: var(--whiteColor);
+	color: var(--rwrkColor);
 	display: block;
 	margin-top: 27px;
 }

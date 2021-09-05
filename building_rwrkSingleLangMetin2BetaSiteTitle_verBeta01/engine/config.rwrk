@@ -1,0 +1,6 @@
+<?php
+	$online = 0;
+	$offlineTimeout = 900;
+	$websiteTimeout = 900;
+	$audioPlay=1;
+?>
