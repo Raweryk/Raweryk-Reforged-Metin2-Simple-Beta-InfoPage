@@ -27,35 +27,3 @@ footer > a { font-weight: bold; }
 content > a > img {
 	margin-top: 5%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*tempDev*/
-::-webkit-scrollbar { width: 5px; }
-::-moz-scrollbar { width: 5px; }
-::-ms-scrollbar { width: 5px; }
-::-o-scrollbar { width: 5px; }
-::scrollbar { width: 5px; }
-
-::-webkit-scrollbar-track { background: #0f1219; }
-::-moz-scrollbar-track { background: #0f1219; }
-::-ms-scrollbar-track { background: #0f1219; }
-::-o-scrollbar-track { background: #0f1219; }
-::scrollbar-track { background: #0f1219; }
-
-::-webkit-scrollbar-thumb { background: #7a0d0d; }
-::-moz-scrollbar-thumb { background: #7a0d0d; }
-::-ms-scrollbar-thumb { background: #7a0d0d; }
-::-o-scrollbar-thumb { background: #7a0d0d; }
-::scrollbar-thumb { background: #7a0d0d; }
-
-/*tempDev*/

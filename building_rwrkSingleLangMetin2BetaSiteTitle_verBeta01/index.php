@@ -27,7 +27,7 @@
 		}
 	?>
 	<!--Wygenerowano: <?php echo date("D, d M Y - H:i:s [h:i:s A]"); ?>-->
-<!--		<nav>
+		<nav>
 			<ul>
 				<li>
 					<a href='./index.php' id='navSelected'>Strona Główna</a>
