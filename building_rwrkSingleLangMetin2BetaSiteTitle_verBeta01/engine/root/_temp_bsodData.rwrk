@@ -1,4 +1,4 @@
-rwrkSite:/importingSchema/[
+rwrkSite:/bsodData/[
 	> js &| json =: blue;
 	> init =: sandstone; //Raweri
 	> document.html(404) =: typical;

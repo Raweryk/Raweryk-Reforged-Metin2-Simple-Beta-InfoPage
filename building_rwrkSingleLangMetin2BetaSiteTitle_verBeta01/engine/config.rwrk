@@ -1,6 +1,7 @@
 <?php
-	$online = 0;
+	$online = 1;
 	$offlineTimeout = 900;
 	$websiteTimeout = 900;
 	$audioPlay=1;
+	$enableRegister=0;
 ?>

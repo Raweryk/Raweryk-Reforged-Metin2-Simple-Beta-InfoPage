@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang='pl'>
 	<head>
-		<?php require('content/language.php'); ?>
 		<?php require('engine/config.rwrk'); ?>
+		<?php require('content/language.php'); ?>
 		<meta http-equiv='refresh' content='<?php echo "$websiteTimeout"; ?>'/>
 		<meta charset='pl-PL.UTF-8'/>
 		<meta name='viewport' content='width=device-width, initial-scale=0.9'/>
@@ -26,6 +26,7 @@
 			header("Location: engine/root/offline.php");
 		}
 	?>
+	<!--Wygenerowano: <?php echo date("D, d M Y - H:i:s [h:i:s A]"); ?>-->
 <!--		<nav>
 			<ul>
 				<li>
@@ -56,11 +57,11 @@
 		<h2><?php echo "$serverDesc"; ?></h2>
 		<hr/>
 		<br/>
-		<a href='./register.php'><button><?php echo "$buttonDesc"; ?></button></a>
+		<a href='#'><button><?php echo "$buttonDesc"; ?></button></a>
 		<p><?php echo "$underButtonINFO"; ?> <a href='./pobierz.php'><?php echo "$underButtonURI"; ?></a></p>
 		</content>
 		<footer>
-			Copyright &copy; 2021 <?php echo "$serverName"; ?>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
+			Copyright &copy; <?php echo date("Y"); ?> <?php echo "$serverName"; ?>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
 		</footer>
 	</body>
 </html>

@@ -40,20 +40,6 @@ content > a > img {
 
 
 /*tempDev*/
-a:hover { animation: crescendo 1.5s alternate infinite ease-in; }
-
-
-button {
-	animation: crescendo 4s alternate infinite ease-in;
-}
-
-@keyframes crescendo {
-  0%   {transform: scale(1.0);}
-  33%   {transform: scale(1.05);}
-  67%   {transform: scale(1.0);}
-  100% {transform: scale(1.05);}
-}
-
 ::-webkit-scrollbar { width: 5px; }
 ::-moz-scrollbar { width: 5px; }
 ::-ms-scrollbar { width: 5px; }
