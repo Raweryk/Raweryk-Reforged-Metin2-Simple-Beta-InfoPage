@@ -18,7 +18,7 @@
 		<link rel='shortcut icon' href='content/favicon.ico'/>
 		<!--RWRK://WorkInProgress--><meta http-equiv='cache-control' content='no-cache'/><!--RWRK://WorkInProgress-->
 		<!--RWRK://WorkInProgress--><link rel='stylesheet' href='./engine/root/rwrkwip.css'/><!--RWRK://WorkInProgress-->
-		<title><?php echo "$serverHello"; ?> <?php echo "$serverName"; ?></title>
+		<title><?php echo "$sysSiteTitle"; ?></title>
 	</head>
 	<body>
 	<?php
@@ -30,22 +30,22 @@
 		<nav>
 			<ul>
 				<li>
-					<a href='./index.php' id='navSelected'>Strona Główna</a>
+					<a href='./index.php' id='navSelected'><?php echo "$sysNavIndex"; ?></a>
 				</li>
 				<li>
-					<a href='./register.php'>Rejestracja</a>
+					<a href='./register.php'><?php echo "$sysNavRegister"; ?></a>
 				</li>
 				<li>
-					<a href='./download.php'>Pobierz</a>
+					<a href='./download.php'><?php echo "$sysNavDownload"; ?></a>
 				</li>
 				<li>
-					<a href='#'>Forum</a>
+					<a href='<?php echo "$uriBoardURI"; ?>'><?php echo "$userNavBoard"; ?></a>
 				</li>
 				<li>
-					<a href='<?php echo "$facebookURI"; ?>'>Fanpage</a>
+					<a href='<?php echo "$uriFacebookURI"; ?>'><?php echo "$userNavFacebook"; ?></a>
 				</li>
 				<li>
-					<a href='<?php echo "$discordURI"; ?>'>Discord</a>
+					<a href='<?php echo "$uriDiscordURI"; ?>'><?php echo "$userNavDiscord"; ?></a>
 				</li>
 			</ul>
 		</nav>
@@ -53,15 +53,15 @@
 		<!--RWRK://WorkInProgress--><div id='rwrk_verRID'>vB01</div><!--RWRK://WorkInProgress-->
 		<content>
 		<a href='./index.php'><img src='content/logo.png' alt='logo'/></a>
-		<h1><?php echo "$serverHello"; ?> <b><?php echo "$serverName"; ?></b>!</h1>
-		<h2><?php echo "$serverDesc"; ?></h2>
+		<h1><?php echo "$coreServerHello"; ?><b> <?php echo "$coreServerName"; ?></b>!</h1>
+		<h2><?php echo "$sysServerDesc"; ?></h2>
 		<hr/>
 		<br/>
 		<a href='#'><button><?php echo "$buttonDesc"; ?></button></a>
-		<p><?php echo "$underButtonINFO"; ?> <a href='./pobierz.php'><?php echo "$underButtonURI"; ?></a></p>
+		<p><?php echo "$coreAssist"; ?> <a href='./pobierz.php'><?php echo "$coreAssistLink"; ?></a></p>
 		</content>
 		<footer>
-			Copyright &copy; <?php echo date("Y"); ?> <?php echo "$serverName"; ?>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
+			Copyright &copy; <?php echo date("Y"); ?> <?php echo "$coreServerName"; ?>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
 		</footer>
 	</body>
 </html>

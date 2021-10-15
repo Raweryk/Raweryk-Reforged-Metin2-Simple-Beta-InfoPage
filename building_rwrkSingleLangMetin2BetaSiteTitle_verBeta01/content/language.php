@@ -1,12 +1,32 @@
 <?php
-	$serverName = "serverName";
-	$serverHello = "serverHello";
-	$serverDesc = "serverDesc";
-	$discordURI = "https://discord.gg/jzp4gvTEVx";
-	$facebookURI = "https://fb.me/Raweryk";
-	$downloadURI = "#";
-	$buttonDesc = "buttonDesc";//Załóż konto
-//	$buttonURI = "./metin2.exe";
-	$underButtonINFO= "underButtonINFO";//"Posiadasz już konto?";
-	$underButtonURI = "underButtonURI";//"Kliknij, aby pobrać";
+//	SYS LEVEL
+	$sysSiteTitle = "coreServerName" . " " . "coreServerHello";
+	$sysNavIndex = "sysNavIndex";
+	$sysNavRegister = "sysNavRegister";
+	$sysNavDownload = "sysNavDownload";
+	$sysServerHello ="sysServerHello";
+	$sysServerDesc ="sysServerDesc";
+
+//	CORE LEVEL
+	$coreServerName = "coreServerName";
+	$coreServerHello = "coreServerHello";
+//	$coreServerDesc = "coreServerDesc";
+	$buttonDesc = "buttonDesc";
+	$coreAssist = "coreAssist";
+	$coreAssistLink= "coreAssistLink";
+
+
+//	USER LEVEL
+//	$userServerName = "userServerName";
+	$userNavBoard = "userNavBoard";
+	$userNavDiscord = "userNavDiscord";
+	$userNavFacebook = "userNavFacebook";
+
+//	URI LEVEL
+	$uriButtonURI = "uriButtonURI";
+
+	$uriBoardURI = "#uriBoardURI";
+	$uriDiscordURI = "#uriDiscordURI";
+	$uriFacebookURI = "#uriFacebookURI";
+	$uriDownloadURI = "#uriDownloadURI";
 ?>

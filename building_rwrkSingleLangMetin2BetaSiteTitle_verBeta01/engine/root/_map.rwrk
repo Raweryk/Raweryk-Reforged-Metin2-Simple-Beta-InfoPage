@@ -35,7 +35,7 @@ rwrkSite:/siteMap/[
 		fix.css
 		importer.css
 	.htaccess
-	index.php
-	register.php
-	download.php
+	index.rwrk
+	register.rwrk
+	download.rwrk
 ]
