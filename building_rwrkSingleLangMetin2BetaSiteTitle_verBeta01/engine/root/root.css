@@ -1,0 +1,71 @@
+:root { 
+	--rwrkBackground: #1b1b1b;
+	--rwrkColor: #bf9365;
+}
+
+scrollbar, ::-webkit-scrollbar { width: 3px; }
+scrollbar-track, ::-webkit-scrollbar-track { background: var(--rwrkBackground); }
+scrollbar-thumb, ::-webkit-scrollbar-thumb { background: var(--rwrkColor); }
+scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:hover { background: var(--rwrkColor); }
+
+* { cursor: wait; }
+
+body {
+	margin: 21% 0 0 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--rwrkBackground);
+	color: var(--rwrkColor);
+	text-align: center;
+	font-family: system-ui;
+	font-size: 21px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+}
+
+content {
+	height: 200px;
+	position: relative;
+	border: 3px solid green;
+}
+
+a {
+	color: var(--rwrkColor);
+	text-decoration: none;
+}
+
+#rwrkError_Title {
+	padding: 0px 21px;
+	color: var(--rwrkBackground);
+	background: var(--rwrkColor);
+	font-weight: bold;
+}
+
+#rwrkError_Desc, #rwrkError_Link {
+	color: var(--rwrkColor);
+	display: block;
+	padding-top: 22px;
+}
+
+#rwrkError_Blink {
+	animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}

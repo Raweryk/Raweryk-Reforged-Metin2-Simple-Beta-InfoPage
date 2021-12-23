@@ -2,15 +2,11 @@
 <html lang="pl">
 	<head>
 		<meta charset="pl-PL.UTF-8">
-		<link rel="icon" type="image/jpg" href="Raweryk.jpg"/>
-		<link rel="stylesheet" href="rwrk.css">
-		<title>Raveri - Raveri</title>
+		<link rel="icon" type="image/jpg" href="raweryk.jpg"/>
+		<link rel="stylesheet" href="root.css">
+		<title>尺闩山🝗尺丫长</title>
 	</head>
 	<body>
-		<span id="rwrkError_Title">Raveri</span><br/>
-		<br/>
-		<img src="./Raweryk.gif"/><br/>
-		<span id="rwrkError_Link"><a href="">Raveri</a> <span id="rwrkError_Blink">_</span>
-		</span>
+		<img src="raweryk.jpg" alt="Raweryk" title="Raweryk"/>
 	</body>
 </html>

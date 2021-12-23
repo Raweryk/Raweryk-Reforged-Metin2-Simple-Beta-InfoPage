@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang='pl'>
 	<head>
+		<?php function error() { header("Location: engine/root/error.php"); } set_error_handler('error'); ?>
 		<?php require('engine/config.rwrk'); ?>
-		<?php require('content/language.php'); ?>
+		<?php if ($displayLangStrings == 1) { require('content/language-strings.php'); } else { require('content/language.php'); } ?>
+		<?php require('engine/init/metadata.rwrk'); ?>
+		<!--RWRK://WorkInProgress--><?php require('engine/root/wip.rwrk'); ?>
+		<title><?php if ($overwriteTitle == 1) { echo "$sysSiteTitle"; } else { echo "$coreServerName $coreServerHello"; } ?></title>
 		<meta http-equiv='refresh' content='<?php echo "$websiteTimeout"; ?>'/>
-		<meta charset='pl-PL.UTF-8'/>
-		<meta name='viewport' content='width=device-width, initial-scale=0.9'/>
-		<meta name='title' content='Metin2'/>
-		<meta name='description' content='Metin2'/>
-		<meta name='keywords' content='Metin2'/>
-		<meta name='robots' content='index, nofollow'/>
-		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-		<!--<meta name='language' content='English'>-->
-		<meta name='author' content='Olaf `Raweryk` Zalewski'/>
-		<!--<base target='_blank'>-->
-		<link rel='stylesheet' href='engine/frontend/index.css'/>
-		<link rel='shortcut icon' href='content/favicon.ico'/>
-		<!--RWRK://WorkInProgress--><meta http-equiv='cache-control' content='no-cache'/><!--RWRK://WorkInProgress-->
-		<!--RWRK://WorkInProgress--><link rel='stylesheet' href='./engine/root/rwrkwip.css'/><!--RWRK://WorkInProgress-->
-		<title><?php echo "$sysSiteTitle"; ?></title>
 	</head>
 	<body>
 	<?php
-		if ($online != 1) {
-			header("Location: engine/root/offline.php");
-		}
+		if ($isOnline != 1) { header("Location: engine/root/offline.php"); }
+		if ($forceCrash == 1) { header("Location: engine/root/error.php"); }
 	?>
 	<!--Wygenerowano: <?php echo date("D, d M Y - H:i:s [h:i:s A]"); ?>-->
+	<!--RWRK://WorkInProgress--><div id='rwrk_wipInfo'>Prace w toku</div><!--RWRK://WorkInProgress-->
+	<!--RWRK://WorkInProgress--><div id='rwrk_verRID'>Beta 02 - snapshot 4</div><!--RWRK://WorkInProgress-->
 		<nav>
 			<ul>
 				<li>
@@ -38,6 +28,7 @@
 				<li>
 					<a href='./download.php'><?php echo "$sysNavDownload"; ?></a>
 				</li>
+					<span><?php echo "$sysNavSeparate"; ?></span>
 				<li>
 					<a href='<?php echo "$uriBoardURI"; ?>'><?php echo "$userNavBoard"; ?></a>
 				</li>
@@ -49,19 +40,17 @@
 				</li>
 			</ul>
 		</nav>
-		<!--RWRK://WorkInProgress--><div id='rwrk_wipInfo'>Prace w toku</div><!--RWRK://WorkInProgress-->
-		<!--RWRK://WorkInProgress--><div id='rwrk_verRID'>vB01</div><!--RWRK://WorkInProgress-->
 		<content>
-		<a href='./index.php'><img src='content/logo.png' alt='logo'/></a>
-		<h1><?php echo "$coreServerHello"; ?><b> <?php echo "$coreServerName"; ?></b>!</h1>
-		<h2><?php echo "$sysServerDesc"; ?></h2>
-		<hr/>
-		<br/>
-		<a href='#'><button><?php echo "$buttonDesc"; ?></button></a>
-		<p><?php echo "$coreAssist"; ?> <a href='./pobierz.php'><?php echo "$coreAssistLink"; ?></a></p>
+			<a href='./'><img src='content/logo.png' alt='logo'/></a>
+			<h1><?php echo "$coreServerHello"; ?><b> <?php echo "$coreServerName"; ?></b>!</h1>
+			<h2><?php echo "$sysServerDesc"; ?></h2>
+			<hr/>
+			<br/>
+			<a href='<?php echo "$uriButtonURI"; ?>'><button><?php echo "$coreButtonDesc"; ?></button></a>
+			<p><?php echo "$coreAssist"; ?> <a href='./pobierz.php'><?php echo "$coreAssistLink"; ?></a></p>
 		</content>
 		<footer>
-			Copyright &copy; <?php echo date("Y"); ?> <?php echo "$coreServerName"; ?>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
+			Copyright &copy; <?php echo date("Y"); ?> <?php echo "$coreServerName"; ?>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a data-tooltip="Olaf `Raweryk` Zalewski" href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
 		</footer>
 	</body>
 </html>

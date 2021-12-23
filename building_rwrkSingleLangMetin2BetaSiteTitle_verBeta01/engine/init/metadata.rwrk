@@ -1,0 +1,12 @@
+<?php echo "		<meta charset='pl-PL.UTF-8'/>
+		<meta name='viewport' content='width=device-width, initial-scale=0.9'/>
+		<meta name='title' content='Metin2'/>
+		<meta name='description' content='Metin2'/>
+		<meta name='keywords' content='Metin2'/>
+		<meta name='robots' content='index, nofollow'/>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+		<!--<meta name='language' content='English'>-->
+		<meta name='author' content='Olaf `Raweryk` Zalewski'/>
+		<!--<base target='_blank'>-->
+		<link rel='stylesheet' href='engine/frontend/index.css'/>
+		<link rel='shortcut icon' href='content/favicon.ico'/>"; ?>
