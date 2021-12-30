@@ -1,15 +1,31 @@
 <?php
+/*
+			USER OPTIONS
+*/
 	$isOnline = 1;
-	$overwriteTitle = 1;
-	$offlineTimeout = 600;
-	$errorTimeout = 300;
-	$websiteTimeout = 900;
+	$overwriteTitle = 0;
 	$enableRegister = 0;//not exist
-	$forceCrash = 0;
-	$debugMode = 1;
-	$displayLangStrings = 1;//not exist
-	$doELW = 1;
 	$displayBoard = 0;//not exist
 	$displayDiscord = 0;//not exist
 	$displayFacebook = 0;//not exist
+/*
+			DEBUG OPTIONS
+*/
+	$debugMode = 1;
+	$displayLangStrings = 1;
+	$forceCrash = 0;
+	$offlineTimeout = 600;
+	$errorTimeout = 300;
+	$websiteTimeout = 900;
+/*
+			rwrkKernelSettings
+*/
+	$rwrkRegisterInstalled = null;
+	$rwrkDownloadInstalled = null;
+	$kernelVersion = null;
+/*
+			DEV OPTIONS
+*/
+	$devMode = 1;
+	$devVersion = "Beta 02 - Snapshot 5";
 ?>

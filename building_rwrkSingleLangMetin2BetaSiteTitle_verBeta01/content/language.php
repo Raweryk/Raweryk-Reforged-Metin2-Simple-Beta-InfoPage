@@ -1,21 +1,20 @@
 <?php
 //	SYS LEVEL
 	$sysSiteTitle = "sysSiteTitle";
-	$sysNavIndex = "sysNavIndex";
-	$sysNavRegister = "sysNavRegister";
-	$sysNavDownload = "sysNavDownload";
-	$sysServerHello ="sysServerHello";
+	$sysNavIndex = "Strona Główna";
+	$sysNavRegister = "Rejestracja";
+	$sysNavDownload = "Pobierz";
+	$sysServerHello ="Witaj na serwerze";
 	$sysServerDesc ="sysServerDesc";
-	$sysNavSeparate = "sysNavSeparate";
+	$sysNavSeparate = "|";
 
 //	CORE LEVEL
-	$coreServerName = "coreServerName";
-	$coreServerHello = "coreServerHello";
+	$coreServerName = "Leya2";
+	$coreServerHello = "Witaj na serwerze";
 	$coreServerDesc = "coreServerDesc"; //DEL
 	$coreButtonDesc = "coreButtonDesc";
 	$coreAssist = "coreAssist";
 	$coreAssistLink= "coreAssistLink";
-
 
 //	USER LEVEL
 	$userServerName = "userServerName"; //DEL
@@ -25,7 +24,6 @@
 
 //	URI LEVEL
 	$uriButtonURI = "#uriButtonURI";
-
 	$uriBoardURI = "#uriBoardURI";
 	$uriDiscordURI = "#uriDiscordURI";
 	$uriFacebookURI = "#uriFacebookURI";

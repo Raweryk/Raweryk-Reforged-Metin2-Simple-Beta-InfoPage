@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang='pl'>
 	<head>
-		<?php function error() { header("Location: engine/root/error.php"); } set_error_handler('error'); ?>
-		<?php require('engine/config.rwrk'); ?>
-		<?php if ($displayLangStrings == 1) { require('content/language-strings.php'); } else { require('content/language.php'); } ?>
-		<?php require('engine/init/metadata.rwrk'); ?>
-		<!--RWRK://WorkInProgress--><?php require('engine/root/wip.rwrk'); ?>
-		<title><?php if ($overwriteTitle == 1) { echo "$sysSiteTitle"; } else { echo "$coreServerName $coreServerHello"; } ?></title>
+		<?php require ('engine/root/kernel.php'); ?>
 		<meta http-equiv='refresh' content='<?php echo "$websiteTimeout"; ?>'/>
+		<title><?php if ($overwriteTitle == 1) { echo "$sysSiteTitle"; } else { echo "$coreServerName $coreServerHello"; } ?></title>
 	</head>
 	<body>
-	<?php
-		if ($isOnline != 1) { header("Location: engine/root/offline.php"); }
-		if ($forceCrash == 1) { header("Location: engine/root/error.php"); }
-	?>
-	<!--Wygenerowano: <?php echo date("D, d M Y - H:i:s [h:i:s A]"); ?>-->
-	<!--RWRK://WorkInProgress--><div id='rwrk_wipInfo'>Prace w toku</div><!--RWRK://WorkInProgress-->
-	<!--RWRK://WorkInProgress--><div id='rwrk_verRID'>Beta 02 - snapshot 4</div><!--RWRK://WorkInProgress-->
+	<div id="loader-wrapper">
+		<div class="load">
+			<hr><hr><hr><hr>
+		</div>
+	</div>
 		<nav>
 			<ul>
 				<li>
@@ -52,5 +46,12 @@
 		<footer>
 			Copyright &copy; <?php echo date("Y"); ?> <?php echo "$coreServerName"; ?>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a data-tooltip="Olaf `Raweryk` Zalewski" href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
 		</footer>
+		<?php if($devMode == 1 && isset($_GET["$debugKey"])) { echo date("D, d M Y - H:i:s [h:i:s A]"); } ?>
+		<?php if ($devMode == 1) { echo "<div id='rwrk_wipInfo'>Prace w toku</div><div id='rwrk_verRID'>$devVersion</div>"; } ?>
 	</body>
+	<script>
+		window.onload = function(){
+			document.querySelector("#loader-wrapper").style.display = "none";
+		}
+	</script>
 </html>
