@@ -4,6 +4,8 @@
 */
 	$isOnline = 1;
 	$overwriteTitle = 0;
+	$englishExist = 1;
+	$primaryElevation = null;//not exist
 	$enableRegister = 0;//not exist
 	$displayBoard = 0;//not exist
 	$displayDiscord = 0;//not exist
@@ -27,5 +29,6 @@
 			DEV OPTIONS
 */
 	$devMode = 1;
-	$devVersion = "Beta 02 - Snapshot 5";
+	$devVersion = "Beta 02 - Snapshot 7 (02.01.22)";
+	$devAdd = "Angielski na sztywno";
 ?>

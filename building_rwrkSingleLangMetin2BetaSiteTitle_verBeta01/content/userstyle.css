@@ -1,5 +1,5 @@
 :root {
-	--nav_background: #0f1219ab;
+	--nav_background: #0f1219;
 	--nav_padding: 7px 0;
 	--blur: blur(3px);
 	--belka-gora: red;
@@ -20,7 +20,9 @@ nav > ul > li > a { font-weight: 300; }
 
 nav > ul > li > a, p > a, footer > a, b { border-bottom: var(--borderDecotarte); }
 
-footer > a { font-weight: bold; }
+a, b, button, span { letter-spacing: 0.07em; }
+
+footer > a, footer > span { font-weight: bold; }
 
 #navSelected { font-weight: 600; border-bottom: 1px dashed var(--body-highlight); }
 
@@ -35,7 +37,6 @@ content > a > img {
 [data-tooltip] {
 	position: relative;
 	z-index: 2;
-	cursor: pointer;
 }
 
 [data-tooltip]:before {
@@ -107,8 +108,8 @@ footer > a { cursor: help; }
 .load hr {
     border: 0;
     margin: 0;
-    width: 40%;
-    height: 40%;
+    width: 33%;
+    height: 33%;
     position: absolute;
     border-radius: 25%;
     animation: spin 2.5s ease infinite;

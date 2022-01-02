@@ -26,6 +26,17 @@
 	font-weight: 100;
 }
 
+#rwrk_addData {
+	position: fixed;
+	right: 0;
+	bottom: var(--rwrkProc);
+	background: var(--root_bg);
+	padding: 10px;
+	text-align: center;
+	color: white;
+	font-weight: 100;
+}
+
 
 
 

@@ -15,9 +15,9 @@
 	if ($forceCrash == 1) {
 		header("Location: engine/root/error.php");
 	}
-	
-	if($devMode == 1 && isset($_GET["$debugKey"])) {
+
 //	if ($displayLangStrings == 1) {
+	if($devMode == 1 && isset($_GET["$debugKey"])) {
 		require('content/language-strings.php');
 	}
 	else {

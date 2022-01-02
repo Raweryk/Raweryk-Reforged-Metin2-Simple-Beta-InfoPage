@@ -3,7 +3,7 @@
 	<head>
 		<?php require ('engine/root/kernel.php'); ?>
 		<meta http-equiv='refresh' content='<?php echo "$websiteTimeout"; ?>'/>
-		<title><?php if ($overwriteTitle == 1) { echo "$sysSiteTitle"; } else { echo "$coreServerName $coreServerHello"; } ?></title>
+		<title><?php if ($overwriteTitle == 1) { echo "$sysSiteTitle"; } else { echo "$coreServerHello $coreServerName"; } ?></title>
 	</head>
 	<body>
 	<div id="loader-wrapper">
@@ -22,7 +22,9 @@
 				<li>
 					<a href='./download.php'><?php echo "$sysNavDownload"; ?></a>
 				</li>
+				<li>
 					<span><?php echo "$sysNavSeparate"; ?></span>
+				</li>
 				<li>
 					<a href='<?php echo "$uriBoardURI"; ?>'><?php echo "$userNavBoard"; ?></a>
 				</li>
@@ -32,11 +34,17 @@
 				<li>
 					<a href='<?php echo "$uriDiscordURI"; ?>'><?php echo "$userNavDiscord"; ?></a>
 				</li>
+				<?php if ($englishExist == 1) { echo "<li>
+					<span>$sysNavSeparate</span>
+				</li>
+				<li>
+					<a href='#english'>English</a>
+				</li>"; } ?>
 			</ul>
 		</nav>
 		<content>
 			<a href='./'><img src='content/logo.png' alt='logo'/></a>
-			<h1><?php echo "$coreServerHello"; ?><b> <?php echo "$coreServerName"; ?></b>!</h1>
+			<h1><?php echo "$coreServerHello"; ?> <b><?php echo "$coreServerName"; ?></b>!</h1>
 			<h2><?php echo "$sysServerDesc"; ?></h2>
 			<hr/>
 			<br/>
@@ -44,10 +52,10 @@
 			<p><?php echo "$coreAssist"; ?> <a href='./pobierz.php'><?php echo "$coreAssistLink"; ?></a></p>
 		</content>
 		<footer>
-			Copyright &copy; <?php echo date("Y"); ?> <?php echo "$coreServerName"; ?>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a data-tooltip="Olaf `Raweryk` Zalewski" href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
+			Copyright &copy; <?php echo date("Y"); ?> <span><?php echo "$coreServerName"; ?></span>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a data-tooltip="Olaf `Raweryk` Zalewski" href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
 		</footer>
 		<?php if($devMode == 1 && isset($_GET["$debugKey"])) { echo date("D, d M Y - H:i:s [h:i:s A]"); } ?>
-		<?php if ($devMode == 1) { echo "<div id='rwrk_wipInfo'>Prace w toku</div><div id='rwrk_verRID'>$devVersion</div>"; } ?>
+		<?php if ($devMode == 1) { echo "<div id='rwrk_wipInfo'>Prace w toku</div><div id='rwrk_verRID'>$devVersion</div><div id='rwrk_addData'>$devAdd</div>"; } ?>
 	</body>
 	<script>
 		window.onload = function(){
