@@ -1,0 +1,28 @@
+<?php
+/*
+			USER OPTIONS
+*/
+	$isOnline = 1;
+	$overwriteTitle = 1;
+	$primaryElevation = 1;
+	$enableRegister = 0;//not exist
+	$displayBoard = 1;
+	$displayDiscord = 1;
+	$displayFacebook = 1;
+/*
+			DEBUG OPTIONS
+*/
+	$debugMode = 0;
+	$disablePreloader = 0;
+	$displayLangStrings = 0;
+	$forceCrash = 0;
+	$offlineTimeout = 600;
+	$errorTimeout = 300;
+	$websiteTimeout = 900;
+/*
+			DEV OPTIONS
+*/
+	$devMode = 1;
+	$devVersion = "Beta 02 - Snapshot 9";
+	$devAdd = "007";
+?>
