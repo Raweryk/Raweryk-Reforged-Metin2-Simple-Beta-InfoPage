@@ -12,9 +12,9 @@
 /*
 			DEBUG OPTIONS
 */
-	$debugMode = 0;
+	$debugMode = 1;
 	$disablePreloader = 0;
-	$displayLangStrings = 0;
+	$displayLangStrings = 1;
 	$forceCrash = 0;
 	$offlineTimeout = 600;
 	$errorTimeout = 300;
@@ -23,6 +23,6 @@
 			DEV OPTIONS
 */
 	$devMode = 1;
-	$devVersion = "Beta 02 - Snapshot 9";
-	$devAdd = "007";
+	$devVersion = "Beta 02 - Snapshot 10 (17 sty 2022)";
+	$devAdd = false;
 ?>

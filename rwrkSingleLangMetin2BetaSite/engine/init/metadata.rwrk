@@ -5,5 +5,6 @@
 		<meta name='keywords' content='$metaKeywords'/>
 		<meta name='robots' content='$metaRobots'/>
 		<meta name='author' content='Raweryk'/>
+		<base href='$sysSiteAligment'>
 		<!--<base target='_blank'>-->
 		<link rel='shortcut icon' href='content/favicon.ico'/>"; ?>

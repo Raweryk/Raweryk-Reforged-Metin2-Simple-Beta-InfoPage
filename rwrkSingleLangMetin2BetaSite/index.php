@@ -51,7 +51,7 @@
 			Copyright &copy; <?php echo date("Y"); ?> <span><?php echo "$coreServerName"; ?></span>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a data-tooltip="Olaf `Raweryk` Zalewski" href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
 		</footer>
 		<?php if($devMode == 1 && isset($_GET["$debugKey"])) { echo date("D, d M Y - H:i:s [h:i:s A]"); } ?>
-		<?php if ($devMode == 1) { echo "<div id='rwrk_wipInfo'>Prace w toku</div><div id='rwrk_verRID'>$devVersion</div><div id='rwrk_addData'>$devAdd</div>"; } ?>
+		<?php if ($devMode == 1) { echo "<div id='rwrk_wipInfo'>Prace w toku</div><div id='rwrk_verRID'>$devVersion</div>"; } if ($devMode == 1 && $devAdd != false) { echo "<div id='rwrk_addData'>$devAdd</div>"; } ?>
 	</body>
 	<script>
 		window.onload = function(){
