@@ -10,6 +10,15 @@
 	$displayDiscord = 1;
 	$displayFacebook = 1;
 /*
+			TIMER OPTIONS
+*/
+	$timerEnable = 0;
+	$timerDate = "Nov 16, 2021 20:00:00";
+	//$timerSay = null;
+	$timerType = 0; //0 = odliczanie do daty / 1 = odliczanie od daty
+	$timerSec = 0; //0 = brak sekund / 1 = sekundy są pokazywane
+	$timerZeros = 0; //0 = brak zer / 1 = pokazywanie zer
+/*
 			DEBUG OPTIONS
 */
 	$debugMode = 1;
@@ -23,6 +32,6 @@
 			DEV OPTIONS
 */
 	$devMode = 1;
-	$devVersion = "Beta 02 - Snapshot 10 (17 sty 2022)";
+	$devVersion = "Beta 02 - Snapshot 11 (01 lut 2022)";
 	$devAdd = false;
 ?>

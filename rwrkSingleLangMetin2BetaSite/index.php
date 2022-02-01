@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang='pl'>
 	<head>
-		<?php require ('engine/root/kernel.php'); ?>
+		<?php require ('engine/root/kernel.php'); 
+		/*$siteSign = "index"; */?>
 		<meta http-equiv='refresh' content='<?php echo "$websiteTimeout"; ?>'/>
 		<link rel='stylesheet' href='engine/frontend/index.css'/>
 		<title><?php if ($overwriteTitle == 1) { echo "$sysSiteTitle"; } else { echo "$coreServerHello $coreServerName"; } ?></title>
@@ -55,7 +56,7 @@
 	</body>
 	<script>
 		window.onload = function(){
-			<?php if ($disablePreloader == 1) { echo "//" ; } ?>document.querySelector("#rwrkPreloader").style.display = "none";
+			<?php if ($disablePreloader == 0) { echo "//" ; } ?>document.querySelector("#rwrkPreloader").style.display = "none";
 		}
 	</script>
 </html>
