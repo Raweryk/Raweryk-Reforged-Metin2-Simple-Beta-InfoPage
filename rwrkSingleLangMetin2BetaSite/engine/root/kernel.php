@@ -1,5 +1,5 @@
 <?php
-require('engine/root/kernelSettings.php');
+require('kernelSettings.php');
 require('content/meta.php');
 require('engine/config.rwrk');
 

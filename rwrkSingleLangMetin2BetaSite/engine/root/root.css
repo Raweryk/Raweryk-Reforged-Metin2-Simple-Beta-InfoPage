@@ -3,21 +3,18 @@
 	--rwrkColor: #bf9365;
 }
 
-scrollbar, ::-webkit-scrollbar { width: 3px; }
-scrollbar-track, ::-webkit-scrollbar-track { background: var(--rwrkBackground); }
-scrollbar-thumb, ::-webkit-scrollbar-thumb { background: var(--rwrkColor); }
-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:hover { background: var(--rwrkColor); }
-
-* { cursor: wait; }
-
+:not(a) { cursor: wait; }
+:not(#rwrkError_Title), :not(#rwrkError_Link) { text-align: left; }
 body {
-	margin: 21% 0 0 0;
+	margin: 21% auto 0 auto;
 	padding: 0;
 	height: 100%;
-	width: 100%;
+	border: 1px solid var(--rwrkColor);
+	width: 25%;
 	background: var(--rwrkBackground);
 	color: var(--rwrkColor);
 	text-align: center;
+	letter-spacing: 0.01em;
 	font-family: system-ui;
 	font-size: 21px;
 	user-select: none;
@@ -44,6 +41,8 @@ a {
 	background: var(--rwrkColor);
 	font-weight: bold;
 }
+
+#rwrkError_Desc { text-align: left; }
 
 #rwrkError_Desc, #rwrkError_Link {
 	color: var(--rwrkColor);

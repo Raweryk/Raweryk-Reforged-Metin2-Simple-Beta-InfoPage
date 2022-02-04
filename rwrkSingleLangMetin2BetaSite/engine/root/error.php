@@ -11,6 +11,10 @@
 	<body>
 		<span id="rwrkError_Title">尺闩山🝗尺丫长</span>
 		<span id="rwrkError_Desc">Wystąpił krytyczny błąd techniczny </span>
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
 		<span id="rwrkError_Link"><a href="../../">Wciśnij tutaj, by powrócić<span id="rwrkError_Blink">_</span></a></span>
 	</body>
 </html>

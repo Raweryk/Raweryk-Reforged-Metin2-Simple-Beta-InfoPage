@@ -22,7 +22,7 @@
 			DEBUG OPTIONS
 */
 	$debugMode = 1;
-	$disablePreloader = 0;
+	$disablePreloader = 1;
 	$displayLangStrings = 1;
 	$forceCrash = 0;
 	$offlineTimeout = 600;
