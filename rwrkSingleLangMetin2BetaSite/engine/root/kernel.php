@@ -48,4 +48,6 @@ require('engine/init/metadata.rwrk');
 if ($devMode ==1 ) { require('engine/root/wip.rwrk'); }
 
 if ($debugMode == 1 && isset($_GET["$debugKey"]) && $primaryElevation == 1) { echo "<meta http-equiv='cache-control' content='no-store, no-cache'/>" ; }
+
+$tip = $tips[rand(0, count($tips) - 1)];
 ?>

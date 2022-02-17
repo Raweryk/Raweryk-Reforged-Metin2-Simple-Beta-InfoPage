@@ -5,10 +5,11 @@
 	$isOnline = 1;
 	$overwriteTitle = 1;
 	$primaryElevation = 1;
-	$enableRegister = 0;//not exist
+	//$enableRegister = 0;
 	$displayBoard = 1;
 	$displayDiscord = 1;
 	$displayFacebook = 1;
+	$preloaderTips = 1; // 1 = losowe ciekawostki/tipy na ekranie ładowania (preloader)
 /*
 			TIMER OPTIONS
 */

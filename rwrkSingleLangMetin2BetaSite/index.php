@@ -10,6 +10,7 @@
 	<body>
 	<div id="rwrkPreloader">
 		<div class="rwrkLoading">
+			<?php if($preloaderTips == 1) { echo "$tip"; } ?>
 			<hr><hr><hr><hr>
 		</div>
 	</div>
@@ -56,7 +57,7 @@
 	</body>
 	<script>
 		window.onload = function(){
-			<?php if ($disablePreloader == 0) { echo "//" ; } ?>document.querySelector("#rwrkPreloader").style.display = "none";
+			<?php if ($disablePreloader == 1) { echo "//" ; } ?>document.querySelector("#rwrkPreloader").style.display = "none";
 		}
 	</script>
 </html>

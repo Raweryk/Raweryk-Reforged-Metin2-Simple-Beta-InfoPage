@@ -4,4 +4,8 @@
 	$rwrkIndex = "index.php";
 	$rwrkRegister = "register.php";
 	$rwrkDownload = "download.php";
+	$tips = file("content/tips.txt");
+	//$sysIndexSignature = "indexSign";
+	//$sysRegisterSignature = "registerSign";
+	//$sysDownloadSignature = "downloadSign";
 ?>
