@@ -1,17 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang='pl'>
 	<head>
-		<?php require ('engine/root/kernel.php'); 
-		/*$siteSign = "index"; */?>
-		<meta http-equiv='refresh' content='<?php echo "$websiteTimeout"; ?>'/>
-		<link rel='stylesheet' href='engine/frontend/index.css'/>
-		<title><?php if ($overwriteTitle == 1) { echo "$sysSiteTitle"; } else { echo "$coreServerHello $coreServerName"; } ?></title>
+		<?php require('engine/root/kernel.php');
+		$siteSign = "index";
+		echo "$boot";?>
 	</head>
 	<body>
 	<div id="rwrkPreloader">
 		<div class="rwrkLoading">
-			<?php if($preloaderTips == 1) { echo "$tip"; } ?>
-			<hr><hr><hr><hr>
+			<hr/><hr/><hr/><hr/>
 		</div>
 	</div>
 		<nav>
@@ -50,10 +47,9 @@
 			<p>$coreAssist <a href='./download.php'>$coreAssistLink</a></p>"; } ?>
 		</content>
 		<footer>
-			Copyright &copy; <?php echo date("Y"); ?> <span><?php echo "$coreServerName"; ?></span>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a data-tooltip="Olaf `Raweryk` Zalewski" href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021. 
+			Copyright &copy; <?php echo date("Y"); ?> <span><?php echo "$coreServerName"; ?></span>. Coded with <span id='rwrk_copyright_heart'>♥</span> by <a data-tooltip="Olaf `Raweryk` Zalewski" href='https://fb.me/Raweryk' base target='_blank'>Raweryk</a> in 2021.
 		</footer>
-		<?php if($devMode == 1 && isset($_GET["$debugKey"])) { echo date("D, d M Y - H:i:s [h:i:s A]"); } ?>
-		<?php if ($devMode == 1) { echo "<div id='rwrk_wipInfo'>Prace w toku</div><div id='rwrk_verRID'>$devVersion</div>"; } if ($devMode == 1 && $devAdd != false) { echo "<div id='rwrk_addData'>$devAdd</div>"; } ?>
+		<?php if(isset($_GET["$debugKey"])) { echo date("D, d M Y - H:i:s [h:i:s A]"); } ?>
 	</body>
 	<script>
 		window.onload = function(){

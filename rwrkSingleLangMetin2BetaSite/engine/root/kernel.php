@@ -1,24 +1,28 @@
 <?php
 require('kernelSettings.php');
-require('content/meta.php');
 require('engine/config.rwrk');
+require('engine/init/metadata.rwrk');
+require('content/meta.php');
 
-if($kernelSettingErrorHandlerRedrict != 0) { set_error_handler('rwrkError'); }
+if($isOnline == true && !isset($_GET["$debugKey"])) {
+	set_error_handler('rwrkError');
+}
+
 function rwrkError() {
 	header("Location: engine/root/error.php");
 }
 
-if($isOnline == 0) {
-//if($isOnline == 0 || $debugMode == 0 && !isset($_GET["$debugKey"])) {
+if($isOnline == false && !isset($_GET["$debugKey"])) {
 	header("Location: engine/root/offline.php");
 }
 
-if($debugMode ==1 && $forceCrash == 1 && isset($_GET["$debugKey"])) {
+
+if($debugMode == 1 && $forceCrash == 1) {
 	header("Location: engine/root/error.php");
 }
 
 //if ($displayLangStrings == 1) {
-if($devMode == 1 && $displayLangStrings == 1 && isset($_GET["$debugKey"])) {
+if($displayLangStrings == 1 && isset($_GET["$debugKey"])) {
 	require('content/language-strings.php');
 }
 else {
@@ -26,7 +30,7 @@ else {
 }
 
 if (file_exists($rwrkRegister)) {
-	if($devMode == 1 && $displayLangStrings == 1 && isset($_GET["$debugKey"])) {
+	if($displayLangStrings == 1 && isset($_GET["$debugKey"])) {
 		require('content/language-register-strings.php');
 	}
 	else {
@@ -35,7 +39,7 @@ if (file_exists($rwrkRegister)) {
 }
 
 if (file_exists($rwrkDownload)) {
-	if($devMode == 1 && $displayLangStrings == 1 && isset($_GET["$debugKey"])) {
+	if($displayLangStrings == 1 && isset($_GET["$debugKey"])) {
 		require('content/language-download-strings.php');
 	}
 	else {
@@ -43,11 +47,7 @@ if (file_exists($rwrkDownload)) {
 	}
 }
 
-require('engine/init/metadata.rwrk');
+if ($overwriteTitle == 1) { $bootTitle = "$sysSiteTitle"; } else { $bootTitle = "$coreServerHello $coreServerName"; }
 
-if ($devMode ==1 ) { require('engine/root/wip.rwrk'); }
-
-if ($debugMode == 1 && isset($_GET["$debugKey"]) && $primaryElevation == 1) { echo "<meta http-equiv='cache-control' content='no-store, no-cache'/>" ; }
-
-$tip = $tips[rand(0, count($tips) - 1)];
+$boot = "<meta http-equiv='refresh' content='$websiteTimeout'/><link rel='stylesheet' href='engine/frontend/index.css'/><title>$bootTitle</title>";
 ?>

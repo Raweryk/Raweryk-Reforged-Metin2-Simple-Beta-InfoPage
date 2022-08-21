@@ -3,7 +3,7 @@ projectMetadata {{
 		"type":"website",
 		"undertype":"singleLang",
 		"displayName":"",
-		"currentRevision":"Beta 02",
+		"currentRevision":"Beta 03",
 		"additionalInfo":""
 	]
 	rwrkSingleLangMetin2IntroductionSite [
@@ -14,13 +14,6 @@ projectMetadata {{
 		"additionalInfo":""
 	]
 	rwrkSingleLangMetin2ProgressSite [
-		"type":"website",
-		"undertype":"singleLang",
-		"displayName":"",
-		"currentRevision":"null",
-		"additionalInfo":""
-	]
-	rwrkSingleLangMetin2BetaSite_variantFluent [
 		"type":"website",
 		"undertype":"singleLang",
 		"displayName":"",

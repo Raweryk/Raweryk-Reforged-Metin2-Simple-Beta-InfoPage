@@ -1,19 +1,18 @@
-:root { 
+:root {
 	--rwrkBackground: #1b1b1b;
 	--rwrkColor: #bf9365;
 }
 
 :not(a) { cursor: wait; }
-:not(#rwrkError_Title), :not(#rwrkError_Link) { text-align: left; }
+
 body {
-	margin: 21% auto 0 auto;
+	margin: 15% auto 0 auto;
 	padding: 0;
 	height: 100%;
-	border: 1px solid var(--rwrkColor);
-	width: 25%;
+	width: 50%;
+	text-align: center;
 	background: var(--rwrkBackground);
 	color: var(--rwrkColor);
-	text-align: center;
 	letter-spacing: 0.01em;
 	font-family: system-ui;
 	font-size: 21px;
@@ -35,22 +34,22 @@ a {
 	text-decoration: none;
 }
 
-#rwrkError_Title {
+ul, li, ul > li, .rwrkError_Desc { text-align: left; }
+
+.rwrkError_Title {
 	padding: 0px 21px;
 	color: var(--rwrkBackground);
 	background: var(--rwrkColor);
 	font-weight: bold;
 }
 
-#rwrkError_Desc { text-align: left; }
-
-#rwrkError_Desc, #rwrkError_Link {
+.rwrkError_Desc, .rwrkError_Link {
 	color: var(--rwrkColor);
 	display: block;
 	padding-top: 22px;
 }
 
-#rwrkError_Blink {
+.rwrkError_Blink {
 	animation: blink 1s steps(1) infinite;
 }
 
