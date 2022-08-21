@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 	<head>
-		<?php require('../config.rwrk'); ?>
+		<?php require('../config.rwrk');?>
 		<meta charset="pl-PL.UTF-8">
 		<meta http-equiv='refresh' content='<?php echo "$offlineTimeout"; ?>;url=../../'/>
 		<link rel="icon" type="image/jpg" href="raweryk.jpg"/>
@@ -9,9 +9,12 @@
 		<title>Offline</title>
 	</head>
 	<body>
-<!--		<img src="./raweryk.gif"/><br/>
--->		<span id="rwrkError_Title">Offline</span>
-		<span id="rwrkError_Desc">Strona została wyłączona.</span>
-		<span id="rwrkError_Link"><a href="../../">Wciśnij tutaj, by powrócić</a> <span id="rwrkError_Blink">_</span></span>
+		<span class="rwrkError_Title">Raweryk</span>
+		<span class="rwrkError_Desc">Strona aktualnie jest wyłączona</span>
+		<ul>
+			<li>test1</li>
+			<li>test2</li>
+		</ul>
+		<span class="rwrkError_Link"><a href="../../">Wciśnij tutaj, by powrócić<span class="rwrkError_Blink">_</span></a></span>
 	</body>
 </html>
