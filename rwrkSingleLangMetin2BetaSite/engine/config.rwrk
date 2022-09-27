@@ -2,7 +2,7 @@
 /*
 			USER OPTIONS
 */
-	$isOnline = 1;
+	$isOnline = 0;
 	$overwriteTitle = 1;
 	//$enableRegister = 0;
 	$displayBoard = 1;

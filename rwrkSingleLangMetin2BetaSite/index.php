@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang='pl'>
 	<head>
-		<?php require('engine/root/kernel.php');
+		<?php require ('engine/root/kernel.php');
 		$siteSign = "index";
 		echo "$boot";?>
 	</head>
