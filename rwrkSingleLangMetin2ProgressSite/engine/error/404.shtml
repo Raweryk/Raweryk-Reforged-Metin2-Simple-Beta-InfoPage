@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<link rel="stylesheet" href="document-data/error.css">
+		<meta charset="pl-PL.UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nie znaleziono</title>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
+	</head>
+	<body>
+		<h1>( ͡° ʖ̯ ͡°)</h1>
+		<h2>Not Found - Error 404</h2>
+		<h3>Nie znaleziono pliku na serwerze.</h3>
+		<button onclick="goBack()">Cofnij!</button>
+	</body>
+</html>

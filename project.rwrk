@@ -1,0 +1,23 @@
+projectMetadata {{
+	rwrkSingleLangMetin2BetaSite [
+		"type":"website",
+		"undertype":"singleLang",
+		"displayName":"",
+		"currentRevision":"Beta 03",
+		"additionalInfo":""
+	]
+	rwrkSingleLangMetin2IntroductionSite [
+		"type":"website",
+		"undertype":"singleLang",
+		"displayName":"",
+		"currentRevision":"null",
+		"additionalInfo":""
+	]
+	rwrkSingleLangMetin2ProgressSite [
+		"type":"website",
+		"undertype":"singleLang",
+		"displayName":"",
+		"currentRevision":"null",
+		"additionalInfo":""
+	]
+}}

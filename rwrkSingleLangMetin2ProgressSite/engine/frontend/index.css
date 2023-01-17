@@ -1,0 +1,36 @@
+﻿@import url("../importer.css");
+
+body {
+	background: black url("../../content/background.png");
+	color: var(--body-font);
+	font-family: lato;
+	text-shadow: 0 0 3px black;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+a > img { margin-top: var(--topAlign); }
+
+a { color: white; text-decoration: none }
+b { color: var(--body-highlight); }
+
+#rwrk_copyright_heart {
+	color: #ff254e;
+	font-weight: bold;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	font-size: var(--footerFontSize);
+	background: var(--nav_background);
+	padding: var(--nav_padding);
+	margin: 0;
+}

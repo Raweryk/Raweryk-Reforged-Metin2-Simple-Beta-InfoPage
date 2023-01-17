@@ -1,0 +1,9 @@
+<?php echo"		<meta charset='pl-PL.UTF-8'/>
+		<meta name='viewport' content='width=device-width, initial-scale=0.9'/>
+		<meta name='title' content='$metaTitle'/>
+		<meta name='description' content='$metaDescription'/>
+		<meta name='keywords' content='$metaKeywords'/>
+		<meta name='robots' content='$metaRobots'/>
+		<meta name='author' content='Raweryk'/>
+		<!--<base target='_blank'>-->
+		<link rel='shortcut icon' href='content/favicon.ico'/>"; ?>
