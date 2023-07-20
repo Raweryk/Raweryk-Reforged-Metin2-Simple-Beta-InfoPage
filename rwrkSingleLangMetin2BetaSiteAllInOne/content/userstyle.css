@@ -1,0 +1,38 @@
+:root {
+	--bodyColor: #f1f1f1;
+	--fontFamily: lato;
+	--buttonFont: lato;
+	--textShadow: 0 0 3px black;
+	--overflow-y: none; //auto = Scrollowanie strony | none = brak scrollowania
+
+	--nav_background: #0f1219;
+	--nav_padding: 7px 0;
+	--blur: blur(3px);
+	--belka-gora: red;
+	--body-highlight: #e5a537;
+	--borderDecotarte: 1px dashed #65acce;
+	--buttonBackground: #820b0d;
+	--buttonBackground_hover: #450100;
+	--buttonBorder: #a1645f;
+	--buttonBorder_hover: #a0282a;
+	--primaryColor: transparent;
+	--secondaryColor: transparent;
+
+	--section-index-width: 100%;
+	--section-register-width: 100%;
+	--section-download-width: 100%;
+
+	--userSelect: auto;
+
+	--selectionBackground: black;
+	--selectionColor: red;
+
+	--scrollbarWidth: 3px;
+	--scrollbarTrack: black;
+	--scrollbarThumb: red;
+
+	--buttonBorderRadius: 1px;
+	--buttonPadding: 10px 50px;
+	--buttonColor: white;
+	--buttonTransition: 0.25s;
+}

@@ -13,7 +13,7 @@ body {
 	text-align: center;
 	background: var(--rwrkBackground);
 	color: var(--rwrkColor);
-	letter-spacing: 0.02em;
+	letter-spacing: 0.01em;
 	font-family: system-ui;
 	font-size: 21px;
 	user-select: none;
@@ -34,22 +34,22 @@ a {
 	text-decoration: none;
 }
 
-ul, li, ul > li, #rwrkDesc { text-align: left; }
+ul, li, ul > li, .rwrkError_Desc { text-align: left; }
 
-#rwrkHeader {
+.rwrkError_Title {
 	padding: 0px 21px;
 	color: var(--rwrkBackground);
 	background: var(--rwrkColor);
 	font-weight: bold;
 }
 
-#rwrkDesc, #rwrkLink {
+.rwrkError_Desc, .rwrkError_Link {
 	color: var(--rwrkColor);
 	display: block;
 	padding-top: 22px;
 }
 
-#rwrkBlink {
+.rwrkError_Blink {
 	animation: blink 1s steps(1) infinite;
 }
 

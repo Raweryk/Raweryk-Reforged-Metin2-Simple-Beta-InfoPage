@@ -15,6 +15,6 @@
 			<li>test1</li>
 			<li>test2</li>
 		</ul>
-		<span class="rwrkError_Link"><a href="../../">Wciśnij tutaj, by powrócić<span class="rwrkError_Blink">_</span></a></span>
+		<span class="rwrkError_Link"><a href="#" onclick="history.back()">Wciśnij tutaj, by powrócić<span class="rwrkError_Blink">_</span></a></span>
 	</body>
 </html>

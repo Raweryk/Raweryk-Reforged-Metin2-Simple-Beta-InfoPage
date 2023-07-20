@@ -1,0 +1,20 @@
+<?php
+/*
+			USER OPTIONS
+*/
+	$isOnline = 1;
+	$overwriteTitle = 1;
+	//$enableRegister = 0;
+	$displayBoard = 1;
+	$displayDiscord = 1;
+	$displayFacebook = 1;
+
+	$timerEnable = 0;
+	$timerDate = "Nov 16, 2021 20:00:00";
+	//$timerSay = null;
+	$timerType = 0; //0 = odliczanie do daty / 1 = odliczanie od daty
+	$timerSec = 0; //0 = brak sekund / 1 = sekundy są pokazywane
+	$timerZeros = 0; //0 = brak zer / 1 = pokazywanie zer
+
+	$enablePin = 0;
+?>

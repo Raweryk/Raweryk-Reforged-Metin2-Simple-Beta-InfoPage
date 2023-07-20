@@ -1,11 +1,7 @@
 <?php
-	$debugKey = "QA7b2yoKrqQbCesL9gFA";			//	Twój unikalny klucz debugujący
-	$stringKey = "T6yBQj9z5eKuqtUCASeG";		//	Klucz wyświetlający frazy językowe
-
-	$rwrkIndex = "index.php";								//
-	$rwrkRegister = "register.php";					//
-	$rwrkDownload = "download.php";					//
-	$debugMode = 0;													//
+	$debugKey = "debug";											//	Twój unikalny klucz debugujący
+	$stringKey = "string";									//	Klucz wyświetlający frazy językowe
+	$debugMode = 1;													//
 	$disablePreloader = 0;									//
 	$displayLangStrings = 0;								//
 	$forceCrash = 0;												//
@@ -13,7 +9,9 @@
 	$errorTimeout = 300;										//
 	$websiteTimeout = 900;									//
 
-/*	$boot = "<meta http-equiv='refresh' content='$websiteTimeout'/>
-	<link rel='stylesheet' href='engine/frontend/index.css'/>
-	<title>".<?php if ($overwriteTitle == 1) { echo "$sysSiteTitle"; } else { echo "$coreServerHello $coreServerName"; } ?></title>"*/
+//	SYGNATURA STRON
+	$rwrkIndex = "index.php";								//
+	$rwrkRegister = "register.php";					//
+	$rwrkDownload = "download.php";					//
+	$sitesSigned = array("index", "download", "register");
 ?>

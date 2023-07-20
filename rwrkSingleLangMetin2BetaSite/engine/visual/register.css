@@ -1,0 +1,100 @@
+@import url("../../init/importer.css");
+
+body {
+	background: black url("../../content/background-register.jpg");
+	color: var(--body-font);
+	font-family: lato;
+	text-shadow: 0 0 3px black;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+nav {
+	background: var(--nav_background);
+	backdrop-filter: var(--blur);
+	padding: var(--nav_padding);
+	margin-bottom: 5.5em;
+}
+
+nav > a { padding: 0 10px; }
+
+.nav_active {
+	border-bottom-color: #046092;
+	display: block;
+	position: absolute;
+	pointer-events: none;
+	border: 6px solid transparent;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+hr { width:  25%; border: 1px solid var(--nav_background); backdrop-filter: blur(1px); }
+
+content { }
+
+button {
+	border-radius: 1px;
+	padding: 10px 50px;
+	background: var(--buttonBackground);
+	backdrop-filter: var(--blur);
+	color: white;
+	border: 2px solid var(--buttonBorder);
+	font-family: lato;
+	transition: 0.25s;
+}
+
+button:hover {
+	box-shadow: 0 0.5em 0.5em -0.4em red;
+	transform: translateY(-0.25em);
+}
+
+button:focus {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgb(255 255 255 / 0%);
+}
+
+a { color: white; text-decoration: none }
+b { color: var(--body-highlight); }
+
+ul { margin: 0; padding: 3px 0; }
+li { display: inline; padding: 0 7px; }
+
+#rwrk_copyright_heart {
+	color: #ff254e;
+	font-weight: bold;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	font-size: 12px;
+	background: var(--nav_background);
+	backdrop-filter: var(--blur);
+	padding: var(--nav_padding);
+	margin: 0;
+}
+
+input{
+	padding: 10px;
+	outline: none;
+}
+
+#regForm {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+tr > td:first-child { text-align: left; }
+tr > td:last-child { text-align: right; }
+
+tr:last-child > td { text-align: center; }

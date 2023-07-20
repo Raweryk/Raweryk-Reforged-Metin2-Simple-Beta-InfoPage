@@ -1,0 +1,62 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: var(--overflow-y);
+}
+
+button { cursor: pointer; }
+
+.js .load, .js #rwrkPreloader {
+	display: block;
+}
+
+#rwrkPreloader {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: #222222de;
+}
+
+.rwrkLoading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+}
+
+.rwrkLoading hr {
+	border: 0;
+	margin: 0;
+	width: 33%;
+	height: 33%;
+	position: absolute;
+	border-radius: 25%;
+	animation: spin 2.5s ease infinite;
+}
+
+.rwrkLoading :first-child {
+	background: var(--bodyColor);
+	animation-delay: -1.5s;
+}
+
+.rwrkLoading :nth-child(2) {
+	background: var(--root_bg);
+	animation-delay: -1s;
+}
+
+.rwrkLoading :nth-child(3) {
+	background: var(--bodyColor);
+	animation-delay: -0.5s;
+}
+
+.rwrkLoading :last-child {
+	background: var(--body-highlight);
+}

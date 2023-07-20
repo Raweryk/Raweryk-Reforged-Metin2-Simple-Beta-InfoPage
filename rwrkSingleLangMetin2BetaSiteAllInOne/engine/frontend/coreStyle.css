@@ -1,0 +1,140 @@
+﻿@import url("../importer.css");
+
+body {
+	color: var(--bodyColor);
+	font-family: var(--fontFamily);
+	text-shadow: var(--textShadow);
+	text-align: center;
+	background: #1b1b1b;
+	-webkit-user-select: var(--userSelect);
+	-moz-user-select: var(--userSelect);
+	-ms-user-select: var(--userSelect);
+	-o-user-select: var(--userSelect);
+	user-select: var(--userSelect);
+}
+
+::-webkit-selection { background: var(--selectionBackground); color: var(--selectionColor); }
+::-moz-selection { background: var(--selectionBackground); color: var(--selectionColor); }
+::-ms-selection { background: var(--selectionBackground); color: var(--selectionColor); }
+::-o-selection { background: var(--selectionBackground); color: var(--selectionColor); }
+::selection { background: var(--selectionBackground); color: var(--selectionColor); }
+
+::-webkit-scrollbar { width: var(--scrollbarWidth); }
+::-moz-scrollbar { width: var(--scrollbarWidth); }
+::-ms-scrollbar { width: var(--scrollbarWidth); }
+::-o-scrollbar { width: var(--scrollbarWidth); }
+::scrollbar { width: var(--scrollbarWidth); }
+
+::-webkit-scrollbar-track { background: var(--scrollbarTrack); }
+::-moz-scrollbar-track { background: var(--scrollbarTrack); }
+::-ms-scrollbar-track { background: var(--scrollbarTrack); }
+::-o-scrollbar-track { background: var(--scrollbarTrack); }
+::scrollbar-track { background: var(--scrollbarTrack); }
+
+::-webkit-scrollbar-thumb { background: var(--scrollbarThumb); }
+::-moz-scrollbar-thumb { background: var(--scrollbarThumb); }
+::-ms-scrollbar-thumb { background: var(--scrollbarThumb); }
+::-o-scrollbar-thumb { background: var(--scrollbarThumb); }
+::scrollbar-thumb { background: var(--scrollbarThumb); }
+
+button {
+	border-radius: var(--buttonBorderRadius);
+	padding: var(--buttonPadding);
+	background: var(--buttonBackground);
+	backdrop-filter: var(--blur);
+	color: var(--buttonColor);
+	border: 2px solid var(--buttonBorder);
+	font-family: var(--buttonFont);
+	transition: var(--buttonTransition);
+}
+
+button:hover {
+	box-shadow: 0 0.5em 0.5em -0.4em red;
+	transform: translateY(-0.25em);
+}
+
+button:focus {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgb(255 255 255 / 0%);
+}
+
+a { color: white; text-decoration: none }
+b { color: var(--body-highlight); }
+
+ul { margin: 0; padding: 3px 0; }
+li { display: inline; padding: 0 7px; }
+
+#rwrk_copyright_heart {
+	color: #ff254e;
+	font-weight: bold;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: var(--nav_background);
+	backdrop-filter: var(--blur);
+	padding: var(--nav_padding);
+	margin: 0;
+}
+
+nav > a { padding: 0 10px; }
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	font-size: 12px;
+	background: var(--nav_background);
+	backdrop-filter: var(--blur);
+	padding: var(--nav_padding);
+	margin: 0;
+}
+
+
+input{
+	padding: 7px;
+	outline: none;
+	background: #0f1219;
+	border: none;
+	color: #aaa;
+	font-family: lato;
+}
+
+#regForm {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+td { display: block; }
+
+tr:last-child > td { text-align: center; }
+
+section {
+	padding: 0; margin: 0;
+	display: flex;
+	width: auto;
+	overflow: hidden;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+}
+
+section:nth-child(2) { border-top: 2px solid var(--nav_background); border-bottom: 2px solid var(--nav_background); }
+#index { background: url("../../content/background.png"); height: var(--section-index-width); }
+#register { background: url("../../content/background-register.jpg"); height: var(--section-register-width); }
+#download { background: url("../../content/background-download.png"); height: var(--section-download-width); }
+
+.submit, .clear { color: white; letter-spacing: 1px; }
+
+.submit { background: #24a724; font-weight: 600; }
+.clear { background: #444; font-weight: 300; }
+
+input:required:after{ content: "*"; color: red; }
+
+nav > ul > li > a:hover { border-bottom: 1px dashed var(--body-highlight); }
